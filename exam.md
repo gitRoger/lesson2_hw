@@ -20,10 +20,8 @@ str2 = " NTU Rails 261!"
 請說明以下兩個印出字串的方式的不同處：
 puts str1 + str2
 puts "#{str1}#{str2}"
-
 Answer:
 puts str1 + str2 及puts "#{str1}#{str2}" 顯示結果皆為"Hallo Welt! NTU Rails 261!",其主要差別在於前者創一個新記憶體空間，後者是由原儲存記憶體位置指定過來，不占記憶體。
-
 3. 請解釋 array 和 hash 的不同處
 Answer:
 array(陣列) 能夠容納各種型別的物件並用逗號隔開項目,用數字序列的索引號碼提取內容。
