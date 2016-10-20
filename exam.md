@@ -29,20 +29,16 @@ Answer:
 array(陣列) 能夠容納各種型別的物件並用逗號隔開項目,用數字序列的索引號碼提取內容。
 hash (雜湊) 用key 與value 組成的內容，提取時用key來提取value。
 舉例如下:
-
-```ruby
-arr = [1, 2, [3,4]] 
-puts arr[2][0] #印出4,也就是第3位的第1位數字
-
-book = { 
+  ```ruby
+  arr = [1, 2, [3,4]] 
+  puts arr[2][0] #印出4,也就是第3位的第1位數字
+  book = { 
     :book_name => "The Effective Executive", 
     :date => 2009,
     :writer => "Peter Ferdinand Drucker"
     }
-puts book[:book_name] #用:book_name為key印出書名
-
-```    
-
+  puts book[:book_name] #用:book_name為key印出書名
+  ```
 4. 請用一行程式碼從 [1, "a string", 3.14, [1,2,3,4]] 這個陣列找出所有非字串的值
 Answer:
 
