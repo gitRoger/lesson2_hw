@@ -79,7 +79,7 @@ shuffle:洗牌
 8. 以下這段程式碼：
 ((1 > 3)&&(true == true))||(!!!false)會執行出什麼結果？ 請試試不用 irb 算出結果。  
 Answer:
-"||"分為左右兩邊，左邊是 nil or false 的時候， 就指定為||= 符號右邊的數值。 
+"||"分為左右兩邊，左邊是 nil or false 的時候， 就指定為||= 符號右邊的數值。    
 step1 判斷((1 > 3)&&(true == true)) :其中&&是且的意思，其左右兩邊要滿足,
     1 > 3 => false , true == true => true , false && true => false      
 step2 判斷(!!!false) 
@@ -104,7 +104,7 @@ Answer:
 
   ```
 11. 請列出兩種不同的 hash 寫法  
-Answer: 
+Answer:    
 1)使用symbol
 
   ```ruby
