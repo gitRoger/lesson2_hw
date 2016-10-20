@@ -14,16 +14,16 @@ Fixnum 用來做整數間的運算或顯示,，可以有正負值;Float是用來
   puts num3.class #因為型別為整數，運算出結果為3，不是我們想呈現的結果
   num3 = num1/num2.to_f #型別轉換為float後，其結果為我們想要的3.3333333333
   ```
-2. 今天有兩個字串：
+2. 今天有兩個字串：    
   ```ruby
 str1 = "Hallo Welt!" 
 str2 = " NTU Rails 261!"
-  ```
-請說明以下兩個印出字串的方式的不同處：
+  ```    
+請說明以下兩個印出字串的方式的不同處：    
   ```ruby
 puts str1 + str2
 puts "#{str1}#{str2}"
-  ```
+  ```    
 Answer:    
 puts str1 + str2 及puts "#{str1}#{str2}" 顯示結果皆為"Hallo Welt! NTU Rails 261!",其主要差別在於前者創一個新記憶體空間，後者是由原儲存記憶體位置指定過來，不占記憶體。
 3. 請解釋 array 和 hash 的不同處  
@@ -42,13 +42,13 @@ hash (雜湊) 用key 與value 組成的內容，提取時用key來提取value。
     }
   puts book[:book_name] #用:book_name為key印出書名
   ```
-4. 請用一行程式碼從 [1, "a string", 3.14, [1,2,3,4]] 這個陣列找出所有非字串的值。
+4. 請用一行程式碼從 [1, "a string", 3.14, [1,2,3,4]] 這個陣列找出所有非字串的值。    
 Answer:
 
   ```ruby
   [1, "a string", 3.14, [1,2,3,4]].delete_if {|x| (x.is_a? String)}
   ```
-5. 請用一行程式碼把一個內容為整數 1 到 100 的陣列裡所有的值加上 2。
+5. 請用一行程式碼把一個內容為整數 1 到 100 的陣列裡所有的值加上 2。    
 Answer:
 
   ```ruby
@@ -90,19 +90,21 @@ step2 判斷(!!!false)
     !代表相反的意思,右式代表false的相反的相反的相反，也就是true。      
 step3 因為左邊是false 的時候， 就指定為||= 符號右邊的數值。  
 step4 result is true。 
-9. 請問 binding.pry 是什麼？ 要如何使用它？  
-Answer:
-1)binding.pry 是ruby語言用來偵錯的tool
-2)使用時先在程式宣告require 'pry', 在檢核範圍下端加入binding.pry,此時可針對夾擊範圍內的每個參數進行偵錯
-10. 下面的一段程式碼，請嘗試用其他方法把 if...else...end 簡化成一行
-    var = 5
-    def var
+9. 請問 binding.pry 是什麼？ 要如何使用它？    
+Answer:    
+1)binding.pry 是ruby語言用來偵錯的tool。    
+2)使用時先在程式宣告require 'pry', 在檢核範圍下端加入binding.pry,此時可針對夾擊範圍內的每個參數進行偵錯。
+10. 下面的一段程式碼，請嘗試用其他方法把if...else...end簡化成一行。
+  ```ruby
+  var = 5
+  def var
     if var >= 5
       return "var is greater than or equal to 5"
     else
       return "var is less than 5"
     end
-    
+  ```
+  
   ```ruby
     var >= 5 ? "var is greater than or equal to 5" : "var is less than 5"
 
