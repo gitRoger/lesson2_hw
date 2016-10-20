@@ -103,7 +103,7 @@ Answer:
     var >= 5 ? "var is greater than or equal to 5" : "var is less than 5"
 
   ```
-11. 請列出兩種不同的 hash 寫法
+11. 請列出兩種不同的 hash 寫法  
 Answer:
 1)使用symbol
 
