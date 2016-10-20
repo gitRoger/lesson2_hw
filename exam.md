@@ -41,57 +41,45 @@ hash (雜湊) 用key 與value 組成的內容，提取時用key來提取value。
 4. 請用一行程式碼從 [1, "a string", 3.14, [1,2,3,4]] 這個陣列找出所有非字串的值
 Answer:
 
-```ruby
-[1, "a string", 3.14, [1,2,3,4]].delete_if {|x| (x.is_a? String)}
-
-```   
-
+  ```ruby
+  [1, "a string", 3.14, [1,2,3,4]].delete_if {|x| (x.is_a? String)}
+  ```
 5. 請用一行程式碼把一個內容為整數 1 到 100 的陣列裡所有的值加上 2
 Answer:
 
-```ruby
-(1..100).to_a.map {|x| x+2}
-(1+2..100+2).to_a
-
-```  
+  ```ruby
+  (1..100).to_a.map {|x| x+2}
+  (1+2..100+2).to_a
+  ```  
 6. 請寫出以下兩行程式碼迴傳的值，並解釋他們呼叫的方法差別為何：
-
 [1, 2, 3, 3].uniq
 [1, 2, 3, 3].uniq!
 Answer:
 [1, 2, 3, 3].uniq 只留下沒重複的元素
 [1, 2, 3, 3].uniq!只留下沒重複的元素,並且把原陣列變成沒有重複元素的陣列，如以下範例:
-    
-```ruby
-arr1 = [1, 2, 3, 3]
-arr2 = [1, 2, 3, 3]
-arr1.uniq #留下沒重複的元素 [1, 2, 3]
-arr1 #再呼叫一次 arr1 [1, 2, 3, 3]陣列內元素未改變
-arr2.uniq! #留下沒重複的元素 [1, 2, 3]
-arr2 #再呼叫一次 arr2  [1, 2, 3]陣列內元素改變
-```
 
+  ```ruby
+  arr1 = [1, 2, 3, 3]
+  arr2 = [1, 2, 3, 3]
+  arr1.uniq #留下沒重複的元素 [1, 2, 3]
+  arr1 #再呼叫一次 arr1 [1, 2, 3, 3]陣列內元素未改變
+  arr2.uniq! #留下沒重複的元素 [1, 2, 3]
+  arr2 #再呼叫一次 arr2  [1, 2, 3]陣列內元素改變
+  ```
 7. 請列出兩種產出亂數的方法
-
 Answer:
 random:隨機選出範圍內的元素
 shuffle:洗牌
 如以下範例:
 
 ```ruby
-
 6.times.map{ 1 + Random.rand(49) } #大樂透透過電腦選6個數字介於1~49
 ["R","P","S"].shuffle!.last #洗牌猜拳,改變陣列元素之排序,取接著最後一個
-
 ```
-
 8. 以下這段程式碼：
-
 ((1 > 3)&&(true == true))||(!!!false)
 會執行出什麼結果？ 請試試不用 irb 算出結果
-
 Answer:
-
 "||"分為左右兩邊，左邊是 nil or false 的時候， 就指定為||= 符號右邊的數值.
 step1 判斷((1 > 3)&&(true == true)) :其中&&是且的意思，其左右兩邊要滿足,
     1 > 3 => false , true == true => true , false && true => false
@@ -99,15 +87,11 @@ step2 判斷(!!!false)
     !代表相反的意思,右式代表false的相反的相反的相反，也就是true.
 step3 因為左邊是false 的時候， 就指定為||= 符號右邊的數值
 step4 result is true
-
 9.請問 binding.pry 是什麼？ 要如何使用它？
-
 Answer:
 1)binding.pry 是ruby語言用來偵錯的tool
 2)使用時先在程式宣告require 'pry', 在檢核範圍下端加入binding.pry,此時可針對夾擊範圍內的每個參數進行偵錯
-
 10. 下面的一段程式碼，請嘗試用其他方法把 if...else...end 簡化成一行
-
     var = 5
     def var
     if var >= 5
@@ -115,34 +99,27 @@ Answer:
     else
       return "var is less than 5"
     end
-
-```ruby
-
+    
+  ```ruby
     var >= 5 ? "var is greater than or equal to 5" : "var is less than 5"
 
-```
-
+  ```
 11. 請列出兩種不同的 hash 寫法
 1)使用symbol
 
-```ruby
-
-US_presidential_candidate = {
-        realname: "Trump",
-        age: "70"
-        political_party: "Republican Party"
-}
-
- ```
-
+  ```ruby
+  US_presidential_candidate = {
+    realname: "Trump",
+    age: "70"
+    political_party: "Republican Party"
+  }
+  ```
 2)字串-hash rocket
 
-```ruby
-
-gestures = {
+  ```ruby
+  gestures = {
     "R" => "Rock",
     "P" => "paper",
     "S" => "Scissors"
     }
-
-```
+  ```
