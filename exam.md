@@ -85,8 +85,8 @@ step1 判斷((1 > 3)&&(true == true)) :其中&&是且的意思，其左右兩邊
 step2 判斷(!!!false) 
     !代表相反的意思,右式代表false的相反的相反的相反，也就是true。      
 step3 因為左邊是false 的時候， 就指定為||= 符號右邊的數值。  
-step4 result is true。
-9.請問 binding.pry 是什麼？ 要如何使用它？
+step4 result is true。 
+9.請問 binding.pry 是什麼？ 要如何使用它？ 
 Answer:
 1)binding.pry 是ruby語言用來偵錯的tool
 2)使用時先在程式宣告require 'pry', 在檢核範圍下端加入binding.pry,此時可針對夾擊範圍內的每個參數進行偵錯
