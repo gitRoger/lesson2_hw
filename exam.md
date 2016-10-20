@@ -80,18 +80,13 @@ shuffle:洗牌
 ((1 > 3)&&(true == true))||(!!!false)
   會執行出什麼結果？ 請試試不用 irb 算出結果。 
 Answer:
-"||"分為左右兩邊，左邊是 nil or false 的時候， 就指定為||= 符號右邊的數值。  
-
+"||"分為左右兩邊，左邊是 nil or false 的時候， 就指定為||= 符號右邊的數值。 
 step1 判斷((1 > 3)&&(true == true)) :其中&&是且的意思，其左右兩邊要滿足,
-    1 > 3 => false , true == true => true , false && true => false  
-    
+    1 > 3 => false , true == true => true , false && true => false      
 step2 判斷(!!!false) 
-    !代表相反的意思,右式代表false的相反的相反的相反，也就是true。  
-    
+    !代表相反的意思,右式代表false的相反的相反的相反，也就是true。      
 step3 因為左邊是false 的時候， 就指定為||= 符號右邊的數值。  
-
-step4 result is true  
-
+step4 result is true。
 9.請問 binding.pry 是什麼？ 要如何使用它？
 Answer:
 1)binding.pry 是ruby語言用來偵錯的tool
