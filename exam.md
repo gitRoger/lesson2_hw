@@ -1,5 +1,5 @@
 
-#小考一    
+#Ruby on rails小考一    
 
 1. 請說明 Fixnum (整數) 和 Float (浮點數) 之間的差異
 
