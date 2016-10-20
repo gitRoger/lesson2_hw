@@ -1,8 +1,8 @@
 
 #Ruby on rails小考一    
 
-1. 請說明 Fixnum (整數) 和 Float (浮點數) 之間的差異
-Answer:
+1. 請說明 Fixnum (整數) 和 Float (浮點數) 之間的差異    
+Answer:    
 Fixnum 用來做整數間的運算或顯示,，可以有正負值;Float是用來做小數之間的運算或顯示，同樣也有正負值;如整數運算中產生小數，需指定型別轉為浮點數，如以下範例:
 
   ```ruby
@@ -15,12 +15,16 @@ Fixnum 用來做整數間的運算或顯示,，可以有正負值;Float是用來
   num3 = num1/num2.to_f #型別轉換為float後，其結果為我們想要的3.3333333333
   ```
 2. 今天有兩個字串：
+  ```ruby
 str1 = "Hallo Welt!" 
 str2 = " NTU Rails 261!"
+  ```
 請說明以下兩個印出字串的方式的不同處：
+  ```ruby
 puts str1 + str2
 puts "#{str1}#{str2}"
-Answer:
+  ```
+Answer:    
 puts str1 + str2 及puts "#{str1}#{str2}" 顯示結果皆為"Hallo Welt! NTU Rails 261!",其主要差別在於前者創一個新記憶體空間，後者是由原儲存記憶體位置指定過來，不占記憶體。
 3. 請解釋 array 和 hash 的不同處  
 Answer:
