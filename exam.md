@@ -38,13 +38,13 @@ hash (雜湊) 用key 與value 組成的內容，提取時用key來提取value。
     }
   puts book[:book_name] #用:book_name為key印出書名
   ```
-4. 請用一行程式碼從 [1, "a string", 3.14, [1,2,3,4]] 這個陣列找出所有非字串的值
+4. 請用一行程式碼從 [1, "a string", 3.14, [1,2,3,4]] 這個陣列找出所有非字串的值。
 Answer:
 
   ```ruby
   [1, "a string", 3.14, [1,2,3,4]].delete_if {|x| (x.is_a? String)}
   ```
-5. 請用一行程式碼把一個內容為整數 1 到 100 的陣列裡所有的值加上 2
+5. 請用一行程式碼把一個內容為整數 1 到 100 的陣列裡所有的值加上 2。
 Answer:
 
   ```ruby
@@ -74,7 +74,7 @@ shuffle:洗牌
 
   ```ruby
   6.times.map{ 1 + Random.rand(49) } #大樂透透過電腦選6個數字介於1~49
-  ["R","P","S"].shuffle!.last #洗牌猜拳,改變陣列元素之排序,取接著最後一個
+  ["R","P","S"].shuffle!.last #洗牌猜拳,改變陣列元素之排序,接著取最後一個元素。
   ```
 8. 以下這段程式碼：
 ((1 > 3)&&(true == true))||(!!!false)
@@ -105,6 +105,7 @@ Answer:
 
   ```
 11. 請列出兩種不同的 hash 寫法
+Answer:
 1)使用symbol
 
   ```ruby
