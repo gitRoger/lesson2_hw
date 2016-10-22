@@ -103,8 +103,8 @@ Answer:
     else
       return "var is less than 5"
     end
-  ```
-  
+  ```    
+  Answer    
   ```ruby
     var >= 5 ? "var is greater than or equal to 5" : "var is less than 5"
 
