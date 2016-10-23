@@ -106,7 +106,7 @@ Answer:
   ```    
   Answer    
   ```ruby
-    var >= 5 ? "var is greater than or equal to 5" : "var is less than 5"
+    return var >= 5 ? "var is greater than or equal to 5" : "var is less than 5"
 
   ```
 11. 請列出兩種不同的 hash 寫法  
